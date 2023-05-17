@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Karla', sans-serif;
+    font-size: 10px;
+}
+
+main {
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .box {
+    display: grid;
+    padding: 5rem 0;
+}
+
+@media (min-width: 50rem) {
+    main .container .box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+main .container .box .card {
+    width: min(95%, 70rem);
+    padding: 2.5rem;
+    margin-inline: auto;
+}
+
+@media (min-width: 50rem) {
+    main .container .box .card {
+        width: 100%;
+        padding: 3.5rem;
+    }
+} 
+
+main .container .box .card p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+main .container .box .one {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: .5rem .5rem 0 0;
+}
+
+@media (min-width: 50rem) {
+    main .container .box .one {
+        grid-column: 1 / span 2;
+    }
+}
+
+main .container .box .one h1 {
+    margin-bottom: 3rem;
+    color: hsl(179, 62%, 43%);
+}
+
+@media (min-width: 50rem) {
+    main .container .box .one h1 {
+        font-size: 2.5rem;
+    }
+}
+
+main .container .box .one span {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 50rem) {
+    main .container .box .one span {
+        font-size: 1.8rem;
+    }
+}
+
+main .container .box .one p {
+    color: hsl(218, 22%, 67%);
+    width: 30rem;
+}
+
+@media (min-width: 50rem) {
+    main .container .box .one p {
+        width: 57rem;
+    }
+}
+
+main .container .box .two {
+    background-color: hsl(179, 62%, 43%);
+}
+
+@media (min-width: 50rem) {
+    main .container .box .two {
+        border-radius: 0 0 0 .5rem;
+    }
+}
+
+main .container .box .two h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 3rem;
+}
+
+main .container .box .two .salary {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: .5rem;
+}
+
+main .container .box .two .salary > span {
+    font-size: 3.5rem;
+    color: hsl(0, 0%, 100%);
+}
+
+main .container .box .two .salary .duration {
+    font-size: 1.6rem;
+    color: hsl(218deg 77.65% 80%);
+}
+
+main .container .box .two p {
+    color: hsl(204, 43%, 93%)
+}
+
+main .container .box .two a {
+    display: block;
+    text-align: center;
+    margin: 3rem 0 0;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 1.5rem;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: .5rem;
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0 1rem 1.5rem hsla(0, 1%, 42%, 0.5);
+}
+
+
+main .container .box .three {
+    background-color: hsl(179deg 62% 43% / 70%);
+    border-radius: 0 0 .5rem .5rem;
+}
+
+@media (min-width: 50rem) {
+    main .container .box .three {
+        border-radius: 0 0 .5rem 0;
+    }
+}
+
+main .container .box .three h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 3rem;
+}
+
+main .container .box .three p {
+    color: hsl(204, 43%, 93%);
+    width: 22rem;
+}
